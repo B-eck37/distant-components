@@ -7,7 +7,9 @@ const reducer = state => state;
 const initialState = {
     loggedInAs: 'B',
     isCreditCardHolder: true,
-}
+};
+
+
 
 const store = createStore(reducer, initialState);
 

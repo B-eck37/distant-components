@@ -1,9 +1,9 @@
 .App {
-  border: 3px red solid;
+  border: 3px rgb(251, 255, 0) double;
 }
 
 .header {
-  border: 3px orange solid;
+  border: 3px rgb(2, 121, 16) solid;
   height: 200px;
   display: flex;
 }
@@ -17,7 +17,7 @@
 }
 
 .footer {
-  border: 3px purple solid;
+  border: 3px purple dashed;
   height: 200px;
   display: flex;
 }
@@ -37,7 +37,7 @@
 }
 
 .main-content {
-  background-color: #eee;
+  background-color: rgba(53, 39, 247, 0.568);
   border: 1px silver dashed;
   padding: 40px;
 }
