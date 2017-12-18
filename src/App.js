@@ -28,9 +28,13 @@ class App extends Component {
     const {loggedInAs, isCreditCardHolder } = this.state;
     return (
       <div className="App">
-        <Header loggedInAs={loggedInAs} isCreditCardHolder={isCreditCardHolder} setLoggedInAs={this.setLoggedInAs} />
+        <Header loggedInAs={loggedInAs} 
+        isCreditCardHolder={isCreditCardHolder} 
+        setLoggedInAs={this.setLoggedInAs} />
         <MainContent />
-        <Footer isCreditCardHolder={isCreditCardHolder} />
+        <Footer loggedInAs={loggedInAs} 
+        isCreditCardHolder={isCreditCardHolder} 
+        setIsCreditCardHolder={this.setIsCreditCardHolder}/>
       </div>
     );
   }
