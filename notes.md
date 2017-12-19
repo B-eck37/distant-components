@@ -25,5 +25,19 @@ The store is a library(OBJECT) of data that is used by any components that wants
 
 ## What is a reducer? What does the reducer do for us in Redux?
 
+A reducer is a function that takes state and an action as parameters and returns a modified copy of state. In redux, this is the only way to modify state.
+
 ## What is immutability? Why do we use it?
+
+Data is considered immutable when function that use the data don't mutate it but instead return a modified copy. Because this data is a reference (to an object or an array), we'll trivially be able to tell that the data has changed, without needing to dig through the object to see what exactly changed. This is useful in React to know if a component should re-render, or doesn't need to bother.
+
+## Vocab
+
+Action: a plain objec. All actions must have a type but the payload is optional.
+
+Action Creator: a function that creates an action for us. For convenience, it helps us keep code DRY.
+
+Dispatch: Sends actions to the store using this. 
+
+
 
